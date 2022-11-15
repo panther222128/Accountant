@@ -1,0 +1,7 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '15.5'
+
+target 'Account' do
+  pod 'Realm', '~>10.26.0', :modular_headers => true
+  pod 'RealmSwift', '~>10', :modular_headers => true
+end

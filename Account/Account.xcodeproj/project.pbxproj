@@ -1,0 +1,987 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DEE73E6D794340AB3EB9375 /* libPods-Account.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0955F2A70313474B1A57CF65 /* libPods-Account.a */; };
+		A0177893290E8EE000C1FBC0 /* AssetElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0177892290E8EE000C1FBC0 /* AssetElement.swift */; };
+		A01778E1290EAE5A00C1FBC0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01778E0290EAE5A00C1FBC0 /* Storage.swift */; };
+		A02E87F829140F6700BC1E27 /* DefaultAccountBookElementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02E87F729140F6700BC1E27 /* DefaultAccountBookElementRepository.swift */; };
+		A02E87FA2914103900BC1E27 /* AccountBookElementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02E87F92914103900BC1E27 /* AccountBookElementRepository.swift */; };
+		A02E87FC2915429600BC1E27 /* AccountBookElementUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02E87FB2915429600BC1E27 /* AccountBookElementUseCase.swift */; };
+		A02E88002915484D00BC1E27 /* AccountBookElementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02E87FF2915484D00BC1E27 /* AccountBookElementViewModel.swift */; };
+		A049911629164B99004237AD /* AccountWriterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049911529164B99004237AD /* AccountWriterViewController.swift */; };
+		A049911829164BDD004237AD /* AccountWriterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A049911729164BDD004237AD /* AccountWriterViewController.storyboard */; };
+		A049911A291658BC004237AD /* AccountWriterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0499119291658BC004237AD /* AccountWriterViewModel.swift */; };
+		A049911C29165BC2004237AD /* AccountWriterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A049911B29165BC2004237AD /* AccountWriterUseCase.swift */; };
+		A053A2F3283DEA2000D472A2 /* Realm+Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053A2F2283DEA2000D472A2 /* Realm+Results.swift */; };
+		A066CED4290970B200C8DC23 /* AssetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066CED3290970B200C8DC23 /* AssetViewModel.swift */; };
+		A066CED6290970C100C8DC23 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066CED5290970C100C8DC23 /* AssetViewController.swift */; };
+		A066CED82909710500C8DC23 /* AssetElementUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066CED72909710500C8DC23 /* AssetElementUseCase.swift */; };
+		A066CEDA2909716000C8DC23 /* AssetElementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066CED92909716000C8DC23 /* AssetElementRepository.swift */; };
+		A066CEDC2909719F00C8DC23 /* DefaultAssetElementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066CEDB2909719F00C8DC23 /* DefaultAssetElementRepository.swift */; };
+		A085C80B290BF9E40046E8D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085C80A290BF9E40046E8D4 /* Constants.swift */; };
+		A0AC710B283C648B00FABD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC710A283C648B00FABD41 /* AppDelegate.swift */; };
+		A0AC710D283C648B00FABD41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC710C283C648B00FABD41 /* SceneDelegate.swift */; };
+		A0AC7114283C648E00FABD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AC7113283C648E00FABD41 /* Assets.xcassets */; };
+		A0AC7117283C648E00FABD41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AC7115283C648E00FABD41 /* LaunchScreen.storyboard */; };
+		A0AC7134283C6C4500FABD41 /* SceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC7133283C6C4500FABD41 /* SceneDIContainer.swift */; };
+		A0AC7136283C6C4D00FABD41 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC7135283C6C4D00FABD41 /* AppDIContainer.swift */; };
+		A0AC7156283C7EF800FABD41 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC7155283C7EF800FABD41 /* AppFlowCoordinator.swift */; };
+		A0AFBB07290AC57100FBCF5D /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AFBB06290AC57100FBCF5D /* Icon.xcassets */; };
+		A0D5CC38290D4D10005C86E2 /* MonthlyAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D5CC37290D4D10005C86E2 /* MonthlyAccountViewController.storyboard */; };
+		A0D5CC3A290D4D4B005C86E2 /* WeeklyAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D5CC39290D4D4B005C86E2 /* WeeklyAccountViewController.storyboard */; };
+		A0D5CC3C290D4D6B005C86E2 /* DailyAccountViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D5CC3B290D4D6B005C86E2 /* DailyAccountViewController.storyboard */; };
+		A0D5CC3E290D4D84005C86E2 /* AssetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D5CC3D290D4D84005C86E2 /* AssetViewController.storyboard */; };
+		A0D5CC40290D4D98005C86E2 /* UserSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D5CC3F290D4D98005C86E2 /* UserSettingsViewController.storyboard */; };
+		A0D5CC44290D4E88005C86E2 /* AccountBookElementCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D5CC43290D4E88005C86E2 /* AccountBookElementCategory.swift */; };
+		A0E5BC03290FF604000E14F8 /* AccountCategoryStorageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E5BC02290FF604000E14F8 /* AccountCategoryStorageEntity.swift */; };
+		A0E5BC05290FF639000E14F8 /* AccountBookElementStorageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E5BC04290FF639000E14F8 /* AccountBookElementStorageEntity.swift */; };
+		A0E5BC07290FF658000E14F8 /* AssetElementStorageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E5BC06290FF658000E14F8 /* AssetElementStorageEntity.swift */; };
+		A0E5BC0929100A03000E14F8 /* RealmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E5BC0829100A03000E14F8 /* RealmError.swift */; };
+		A0EA25D5291BE7FB0050534A /* PushAccountWriterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EA25D4291BE7FB0050534A /* PushAccountWriterViewModel.swift */; };
+		A0F566F829081B0E00DE44D7 /* DefaultAccountCategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566F529081ABC00DE44D7 /* DefaultAccountCategoryRepository.swift */; };
+		A0F566F929081B0E00DE44D7 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566F229081AB200DE44D7 /* DataTransferService.swift */; };
+		A0F566FA29081B0E00DE44D7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566F329081AB200DE44D7 /* Endpoint.swift */; };
+		A0F566FB29081B0E00DE44D7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566F429081AB200DE44D7 /* NetworkService.swift */; };
+		A0F566FC29081B1500DE44D7 /* ViewFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566EC29081AA000DE44D7 /* ViewFlowCoordinator.swift */; };
+		A0F566FD29081B1500DE44D7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566E529081AA000DE44D7 /* Observable.swift */; };
+		A0F566FE29081B1500DE44D7 /* MonthlyAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566E829081AA000DE44D7 /* MonthlyAccountViewModel.swift */; };
+		A0F566FF29081B1500DE44D7 /* MonthlyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566EA29081AA000DE44D7 /* MonthlyAccountViewController.swift */; };
+		A0F5670029081B1500DE44D7 /* WeeklyAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566E129081AA000DE44D7 /* WeeklyAccountViewModel.swift */; };
+		A0F5670129081B1500DE44D7 /* WeeklyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566E329081AA000DE44D7 /* WeeklyAccountViewController.swift */; };
+		A0F5670229081B1500DE44D7 /* DailyAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566EF29081AA000DE44D7 /* DailyAccountViewModel.swift */; };
+		A0F5670B29081B5700DE44D7 /* AccountCategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5670529081B4F00DE44D7 /* AccountCategoryRepository.swift */; };
+		A0F5670C29081B5700DE44D7 /* WeeklyAccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5670729081B5000DE44D7 /* WeeklyAccountUseCase.swift */; };
+		A0F5670D29081B5700DE44D7 /* MonthlyAccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5670829081B5000DE44D7 /* MonthlyAccountUseCase.swift */; };
+		A0F5670E29081B5700DE44D7 /* DailyAccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5670929081B5000DE44D7 /* DailyAccountUseCase.swift */; };
+		A0F5670F29081FC400DE44D7 /* DailyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F566F129081AA000DE44D7 /* DailyAccountViewController.swift */; };
+		A0F56711290827C800DE44D7 /* AccountBookElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F56710290827C800DE44D7 /* AccountBookElement.swift */; };
+		A0F567172908293200DE44D7 /* UserSettingsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F567162908293200DE44D7 /* UserSettingsUseCase.swift */; };
+		A0F567192908295900DE44D7 /* DefaultUserSettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F567182908295900DE44D7 /* DefaultUserSettingsRepository.swift */; };
+		A0F5671E290829B600DE44D7 /* UserSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5671D290829B600DE44D7 /* UserSettingsViewModel.swift */; };
+		A0F56720290829CC00DE44D7 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5671F290829CC00DE44D7 /* UserSettingsViewController.swift */; };
+		A0F5672229082A6200DE44D7 /* UserSettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F5672129082A6200DE44D7 /* UserSettingsRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0955F2A70313474B1A57CF65 /* libPods-Account.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Account.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0177892290E8EE000C1FBC0 /* AssetElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetElement.swift; sourceTree = "<group>"; };
+		A01778E0290EAE5A00C1FBC0 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		A02E87F729140F6700BC1E27 /* DefaultAccountBookElementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAccountBookElementRepository.swift; sourceTree = "<group>"; };
+		A02E87F92914103900BC1E27 /* AccountBookElementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBookElementRepository.swift; sourceTree = "<group>"; };
+		A02E87FB2915429600BC1E27 /* AccountBookElementUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBookElementUseCase.swift; sourceTree = "<group>"; };
+		A02E87FF2915484D00BC1E27 /* AccountBookElementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBookElementViewModel.swift; sourceTree = "<group>"; };
+		A049911529164B99004237AD /* AccountWriterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountWriterViewController.swift; sourceTree = "<group>"; };
+		A049911729164BDD004237AD /* AccountWriterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountWriterViewController.storyboard; sourceTree = "<group>"; };
+		A0499119291658BC004237AD /* AccountWriterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountWriterViewModel.swift; sourceTree = "<group>"; };
+		A049911B29165BC2004237AD /* AccountWriterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountWriterUseCase.swift; sourceTree = "<group>"; };
+		A053A2F2283DEA2000D472A2 /* Realm+Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Results.swift"; sourceTree = "<group>"; };
+		A066CED3290970B200C8DC23 /* AssetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewModel.swift; sourceTree = "<group>"; };
+		A066CED5290970C100C8DC23 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		A066CED72909710500C8DC23 /* AssetElementUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetElementUseCase.swift; sourceTree = "<group>"; };
+		A066CED92909716000C8DC23 /* AssetElementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetElementRepository.swift; sourceTree = "<group>"; };
+		A066CEDB2909719F00C8DC23 /* DefaultAssetElementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAssetElementRepository.swift; sourceTree = "<group>"; };
+		A081181A097F91FB736EC569 /* Pods-Account.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Account.release.xcconfig"; path = "Target Support Files/Pods-Account/Pods-Account.release.xcconfig"; sourceTree = "<group>"; };
+		A085C80A290BF9E40046E8D4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0AC7107283C648B00FABD41 /* Account.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Account.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0AC710A283C648B00FABD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0AC710C283C648B00FABD41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0AC7113283C648E00FABD41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0AC7116283C648E00FABD41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0AC7118283C648E00FABD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AC7133283C6C4500FABD41 /* SceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDIContainer.swift; sourceTree = "<group>"; };
+		A0AC7135283C6C4D00FABD41 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		A0AC7155283C7EF800FABD41 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		A0AFBB06290AC57100FBCF5D /* Icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icon.xcassets; sourceTree = "<group>"; };
+		A0D5CC37290D4D10005C86E2 /* MonthlyAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MonthlyAccountViewController.storyboard; sourceTree = "<group>"; };
+		A0D5CC39290D4D4B005C86E2 /* WeeklyAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeeklyAccountViewController.storyboard; sourceTree = "<group>"; };
+		A0D5CC3B290D4D6B005C86E2 /* DailyAccountViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyAccountViewController.storyboard; sourceTree = "<group>"; };
+		A0D5CC3D290D4D84005C86E2 /* AssetViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AssetViewController.storyboard; sourceTree = "<group>"; };
+		A0D5CC3F290D4D98005C86E2 /* UserSettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserSettingsViewController.storyboard; sourceTree = "<group>"; };
+		A0D5CC43290D4E88005C86E2 /* AccountBookElementCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBookElementCategory.swift; sourceTree = "<group>"; };
+		A0E5BC02290FF604000E14F8 /* AccountCategoryStorageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCategoryStorageEntity.swift; sourceTree = "<group>"; };
+		A0E5BC04290FF639000E14F8 /* AccountBookElementStorageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBookElementStorageEntity.swift; sourceTree = "<group>"; };
+		A0E5BC06290FF658000E14F8 /* AssetElementStorageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetElementStorageEntity.swift; sourceTree = "<group>"; };
+		A0E5BC0829100A03000E14F8 /* RealmError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmError.swift; sourceTree = "<group>"; };
+		A0EA25D4291BE7FB0050534A /* PushAccountWriterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAccountWriterViewModel.swift; sourceTree = "<group>"; };
+		A0F566E129081AA000DE44D7 /* WeeklyAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyAccountViewModel.swift; sourceTree = "<group>"; };
+		A0F566E329081AA000DE44D7 /* WeeklyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyAccountViewController.swift; sourceTree = "<group>"; };
+		A0F566E529081AA000DE44D7 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		A0F566E829081AA000DE44D7 /* MonthlyAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyAccountViewModel.swift; sourceTree = "<group>"; };
+		A0F566EA29081AA000DE44D7 /* MonthlyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyAccountViewController.swift; sourceTree = "<group>"; };
+		A0F566EC29081AA000DE44D7 /* ViewFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFlowCoordinator.swift; sourceTree = "<group>"; };
+		A0F566EF29081AA000DE44D7 /* DailyAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAccountViewModel.swift; sourceTree = "<group>"; };
+		A0F566F129081AA000DE44D7 /* DailyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAccountViewController.swift; sourceTree = "<group>"; };
+		A0F566F229081AB200DE44D7 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		A0F566F329081AB200DE44D7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A0F566F429081AB200DE44D7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A0F566F529081ABC00DE44D7 /* DefaultAccountCategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAccountCategoryRepository.swift; sourceTree = "<group>"; };
+		A0F5670529081B4F00DE44D7 /* AccountCategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCategoryRepository.swift; sourceTree = "<group>"; };
+		A0F5670729081B5000DE44D7 /* WeeklyAccountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyAccountUseCase.swift; sourceTree = "<group>"; };
+		A0F5670829081B5000DE44D7 /* MonthlyAccountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyAccountUseCase.swift; sourceTree = "<group>"; };
+		A0F5670929081B5000DE44D7 /* DailyAccountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAccountUseCase.swift; sourceTree = "<group>"; };
+		A0F56710290827C800DE44D7 /* AccountBookElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBookElement.swift; sourceTree = "<group>"; };
+		A0F567162908293200DE44D7 /* UserSettingsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsUseCase.swift; sourceTree = "<group>"; };
+		A0F567182908295900DE44D7 /* DefaultUserSettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserSettingsRepository.swift; sourceTree = "<group>"; };
+		A0F5671D290829B600DE44D7 /* UserSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewModel.swift; sourceTree = "<group>"; };
+		A0F5671F290829CC00DE44D7 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
+		A0F5672129082A6200DE44D7 /* UserSettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsRepository.swift; sourceTree = "<group>"; };
+		DB0CDD7D8E2220B9357614CE /* Pods-Account.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Account.debug.xcconfig"; path = "Target Support Files/Pods-Account/Pods-Account.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0AC7104283C648B00FABD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEE73E6D794340AB3EB9375 /* libPods-Account.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CE2F4020916DEE54DF53C76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0955F2A70313474B1A57CF65 /* libPods-Account.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A017788D290E8E9400C1FBC0 /* AssetElement */ = {
+			isa = PBXGroup;
+			children = (
+				A0177892290E8EE000C1FBC0 /* AssetElement.swift */,
+			);
+			path = AssetElement;
+			sourceTree = "<group>";
+		};
+		A01778DC290EADF700C1FBC0 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				A01778E7290EB8C100C1FBC0 /* Storage */,
+				A01778E6290EB8BA00C1FBC0 /* StorageEntities */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		A01778E6290EB8BA00C1FBC0 /* StorageEntities */ = {
+			isa = PBXGroup;
+			children = (
+				A0E5BC01290FF5BF000E14F8 /* AccountCategoryEntity */,
+				A0E5BC00290FF5B8000E14F8 /* AccountBookElementEntity */,
+				A0E5BBFF290FF5AD000E14F8 /* AssetsEntity */,
+			);
+			path = StorageEntities;
+			sourceTree = "<group>";
+		};
+		A01778E7290EB8C100C1FBC0 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A0E5BC0829100A03000E14F8 /* RealmError.swift */,
+				A01778E0290EAE5A00C1FBC0 /* Storage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A02E87FD291547AB00BC1E27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566EB29081AA000DE44D7 /* Flows */,
+				A02E87FE291547C000BC1E27 /* CommonViewModel */,
+				A049911229164B44004237AD /* AccountWriterView */,
+				A0F566E629081AA000DE44D7 /* MonthlyAccountView */,
+				A0F566DF29081AA000DE44D7 /* WeeklyAccountView */,
+				A0F566ED29081AA000DE44D7 /* DailyAccountView */,
+				A0F5671A2908297D00DE44D7 /* UserSettingsView */,
+				A066CED02909708B00C8DC23 /* AssetView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A02E87FE291547C000BC1E27 /* CommonViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A02E87FF2915484D00BC1E27 /* AccountBookElementViewModel.swift */,
+				A0EA25D4291BE7FB0050534A /* PushAccountWriterViewModel.swift */,
+			);
+			path = CommonViewModel;
+			sourceTree = "<group>";
+		};
+		A049911229164B44004237AD /* AccountWriterView */ = {
+			isa = PBXGroup;
+			children = (
+				A049911429164B5C004237AD /* ViewModel */,
+				A049911329164B55004237AD /* Controller */,
+			);
+			path = AccountWriterView;
+			sourceTree = "<group>";
+		};
+		A049911329164B55004237AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A049911529164B99004237AD /* AccountWriterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A049911429164B5C004237AD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0499119291658BC004237AD /* AccountWriterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A053A2F1283DEA0A00D472A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A053A2F2283DEA2000D472A2 /* Realm+Results.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A066CED02909708B00C8DC23 /* AssetView */ = {
+			isa = PBXGroup;
+			children = (
+				A066CED12909709B00C8DC23 /* ViewModel */,
+				A066CED22909709F00C8DC23 /* Controller */,
+			);
+			path = AssetView;
+			sourceTree = "<group>";
+		};
+		A066CED12909709B00C8DC23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A066CED3290970B200C8DC23 /* AssetViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A066CED22909709F00C8DC23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A066CED5290970C100C8DC23 /* AssetViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A085C808290BF9CF0046E8D4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A085C80A290BF9E40046E8D4 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A085C80C290D45B00046E8D4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A0D5CC37290D4D10005C86E2 /* MonthlyAccountViewController.storyboard */,
+				A0D5CC39290D4D4B005C86E2 /* WeeklyAccountViewController.storyboard */,
+				A0D5CC3B290D4D6B005C86E2 /* DailyAccountViewController.storyboard */,
+				A0D5CC3D290D4D84005C86E2 /* AssetViewController.storyboard */,
+				A0D5CC3F290D4D98005C86E2 /* UserSettingsViewController.storyboard */,
+				A049911729164BDD004237AD /* AccountWriterViewController.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A0AC70FE283C648B00FABD41 = {
+			isa = PBXGroup;
+			children = (
+				A0AC7109283C648B00FABD41 /* Account */,
+				A0AC7108283C648B00FABD41 /* Products */,
+				F7AD5DE63A119278DEAF362D /* Pods */,
+				1CE2F4020916DEE54DF53C76 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0AC7108283C648B00FABD41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC7107283C648B00FABD41 /* Account.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0AC7109283C648B00FABD41 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC711E283C652D00FABD41 /* Application */,
+				A0AC7120283C655F00FABD41 /* Presentation */,
+				A0AC712E283C660E00FABD41 /* Domain */,
+				A0AC7121283C656900FABD41 /* Data */,
+				A0AC7122283C656C00FABD41 /* Infrastructure */,
+				A0AC711F283C653A00FABD41 /* Resources */,
+				A053A2F1283DEA0A00D472A2 /* Extension */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		A0AC711E283C652D00FABD41 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC7132283C6C2C00FABD41 /* AppDIContainer */,
+				A0AC710A283C648B00FABD41 /* AppDelegate.swift */,
+				A0AC710C283C648B00FABD41 /* SceneDelegate.swift */,
+				A0AC7155283C7EF800FABD41 /* AppFlowCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A0AC711F283C653A00FABD41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0AFBB05290AC4C600FBCF5D /* Asset */,
+				A085C808290BF9CF0046E8D4 /* Constants */,
+				A085C80C290D45B00046E8D4 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A0AC7120283C655F00FABD41 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A02E87FD291547AB00BC1E27 /* Views */,
+				A0F566E429081AA000DE44D7 /* Utility */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A0AC7121283C656900FABD41 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC7123283C657300FABD41 /* Repository */,
+				A01778DC290EADF700C1FBC0 /* Storages */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A0AC7122283C656C00FABD41 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A0AC7123283C657300FABD41 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566F529081ABC00DE44D7 /* DefaultAccountCategoryRepository.swift */,
+				A02E87F729140F6700BC1E27 /* DefaultAccountBookElementRepository.swift */,
+				A066CEDB2909719F00C8DC23 /* DefaultAssetElementRepository.swift */,
+				A0F567182908295900DE44D7 /* DefaultUserSettingsRepository.swift */,
+				A0AC712C283C65F400FABD41 /* Network */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A0AC712C283C65F400FABD41 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566F229081AB200DE44D7 /* DataTransferService.swift */,
+				A0F566F329081AB200DE44D7 /* Endpoint.swift */,
+				A0F566F429081AB200DE44D7 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0AC712E283C660E00FABD41 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A0F5670A29081B5000DE44D7 /* Entity */,
+				A0F5670629081B5000DE44D7 /* UseCase */,
+				A0F5670429081B4F00DE44D7 /* Interface */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A0AC7132283C6C2C00FABD41 /* AppDIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC7133283C6C4500FABD41 /* SceneDIContainer.swift */,
+				A0AC7135283C6C4D00FABD41 /* AppDIContainer.swift */,
+			);
+			path = AppDIContainer;
+			sourceTree = "<group>";
+		};
+		A0AFBB05290AC4C600FBCF5D /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				A0AC7118283C648E00FABD41 /* Info.plist */,
+				A0AC7113283C648E00FABD41 /* Assets.xcassets */,
+				A0AFBB06290AC57100FBCF5D /* Icon.xcassets */,
+				A0AC7115283C648E00FABD41 /* LaunchScreen.storyboard */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		A0D5CC41290D4E53005C86E2 /* AccountBookElement */ = {
+			isa = PBXGroup;
+			children = (
+				A0F56710290827C800DE44D7 /* AccountBookElement.swift */,
+			);
+			path = AccountBookElement;
+			sourceTree = "<group>";
+		};
+		A0D5CC42290D4E5A005C86E2 /* AccountBookElementCategory */ = {
+			isa = PBXGroup;
+			children = (
+				A0D5CC43290D4E88005C86E2 /* AccountBookElementCategory.swift */,
+			);
+			path = AccountBookElementCategory;
+			sourceTree = "<group>";
+		};
+		A0E5BBFF290FF5AD000E14F8 /* AssetsEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A0E5BC06290FF658000E14F8 /* AssetElementStorageEntity.swift */,
+			);
+			path = AssetsEntity;
+			sourceTree = "<group>";
+		};
+		A0E5BC00290FF5B8000E14F8 /* AccountBookElementEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A0E5BC04290FF639000E14F8 /* AccountBookElementStorageEntity.swift */,
+			);
+			path = AccountBookElementEntity;
+			sourceTree = "<group>";
+		};
+		A0E5BC01290FF5BF000E14F8 /* AccountCategoryEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A0E5BC02290FF604000E14F8 /* AccountCategoryStorageEntity.swift */,
+			);
+			path = AccountCategoryEntity;
+			sourceTree = "<group>";
+		};
+		A0F566DF29081AA000DE44D7 /* WeeklyAccountView */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566E029081AA000DE44D7 /* ViewModel */,
+				A0F566E229081AA000DE44D7 /* Controller */,
+			);
+			path = WeeklyAccountView;
+			sourceTree = "<group>";
+		};
+		A0F566E029081AA000DE44D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566E129081AA000DE44D7 /* WeeklyAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0F566E229081AA000DE44D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566E329081AA000DE44D7 /* WeeklyAccountViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0F566E429081AA000DE44D7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566E529081AA000DE44D7 /* Observable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A0F566E629081AA000DE44D7 /* MonthlyAccountView */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566E729081AA000DE44D7 /* ViewModel */,
+				A0F566E929081AA000DE44D7 /* Controller */,
+			);
+			path = MonthlyAccountView;
+			sourceTree = "<group>";
+		};
+		A0F566E729081AA000DE44D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566E829081AA000DE44D7 /* MonthlyAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0F566E929081AA000DE44D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566EA29081AA000DE44D7 /* MonthlyAccountViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0F566EB29081AA000DE44D7 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566EC29081AA000DE44D7 /* ViewFlowCoordinator.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		A0F566ED29081AA000DE44D7 /* DailyAccountView */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566EE29081AA000DE44D7 /* ViewModel */,
+				A0F566F029081AA000DE44D7 /* Controller */,
+			);
+			path = DailyAccountView;
+			sourceTree = "<group>";
+		};
+		A0F566EE29081AA000DE44D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566EF29081AA000DE44D7 /* DailyAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0F566F029081AA000DE44D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0F566F129081AA000DE44D7 /* DailyAccountViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0F5670429081B4F00DE44D7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A0F5670529081B4F00DE44D7 /* AccountCategoryRepository.swift */,
+				A02E87F92914103900BC1E27 /* AccountBookElementRepository.swift */,
+				A066CED92909716000C8DC23 /* AssetElementRepository.swift */,
+				A0F5672129082A6200DE44D7 /* UserSettingsRepository.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		A0F5670629081B5000DE44D7 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				A049911B29165BC2004237AD /* AccountWriterUseCase.swift */,
+				A0F5670829081B5000DE44D7 /* MonthlyAccountUseCase.swift */,
+				A0F5670729081B5000DE44D7 /* WeeklyAccountUseCase.swift */,
+				A0F5670929081B5000DE44D7 /* DailyAccountUseCase.swift */,
+				A0F567162908293200DE44D7 /* UserSettingsUseCase.swift */,
+				A066CED72909710500C8DC23 /* AssetElementUseCase.swift */,
+				A02E87FB2915429600BC1E27 /* AccountBookElementUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		A0F5670A29081B5000DE44D7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A0D5CC42290D4E5A005C86E2 /* AccountBookElementCategory */,
+				A0D5CC41290D4E53005C86E2 /* AccountBookElement */,
+				A017788D290E8E9400C1FBC0 /* AssetElement */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A0F5671A2908297D00DE44D7 /* UserSettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				A0F5671B2908299600DE44D7 /* ViewModel */,
+				A0F5671C2908299F00DE44D7 /* Controller */,
+			);
+			path = UserSettingsView;
+			sourceTree = "<group>";
+		};
+		A0F5671B2908299600DE44D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0F5671D290829B600DE44D7 /* UserSettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0F5671C2908299F00DE44D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0F5671F290829CC00DE44D7 /* UserSettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7AD5DE63A119278DEAF362D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB0CDD7D8E2220B9357614CE /* Pods-Account.debug.xcconfig */,
+				A081181A097F91FB736EC569 /* Pods-Account.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0AC7106283C648B00FABD41 /* Account */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0AC711B283C648E00FABD41 /* Build configuration list for PBXNativeTarget "Account" */;
+			buildPhases = (
+				1EB84FB8A37F9C4E9A2C99F1 /* [CP] Check Pods Manifest.lock */,
+				A0AC7103283C648B00FABD41 /* Sources */,
+				A0AC7104283C648B00FABD41 /* Frameworks */,
+				A0AC7105283C648B00FABD41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Account;
+			productName = RealmPractice;
+			productReference = A0AC7107283C648B00FABD41 /* Account.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0AC70FF283C648B00FABD41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A0AC7106283C648B00FABD41 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = A0AC7102283C648B00FABD41 /* Build configuration list for PBXProject "Account" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0AC70FE283C648B00FABD41;
+			productRefGroup = A0AC7108283C648B00FABD41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0AC7106283C648B00FABD41 /* Account */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0AC7105283C648B00FABD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AC7117283C648E00FABD41 /* LaunchScreen.storyboard in Resources */,
+				A0D5CC38290D4D10005C86E2 /* MonthlyAccountViewController.storyboard in Resources */,
+				A0D5CC3E290D4D84005C86E2 /* AssetViewController.storyboard in Resources */,
+				A049911829164BDD004237AD /* AccountWriterViewController.storyboard in Resources */,
+				A0D5CC40290D4D98005C86E2 /* UserSettingsViewController.storyboard in Resources */,
+				A0AFBB07290AC57100FBCF5D /* Icon.xcassets in Resources */,
+				A0D5CC3A290D4D4B005C86E2 /* WeeklyAccountViewController.storyboard in Resources */,
+				A0AC7114283C648E00FABD41 /* Assets.xcassets in Resources */,
+				A0D5CC3C290D4D6B005C86E2 /* DailyAccountViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EB84FB8A37F9C4E9A2C99F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Account-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0AC7103283C648B00FABD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E5BC07290FF658000E14F8 /* AssetElementStorageEntity.swift in Sources */,
+				A0F5670F29081FC400DE44D7 /* DailyAccountViewController.swift in Sources */,
+				A0F56720290829CC00DE44D7 /* UserSettingsViewController.swift in Sources */,
+				A02E87FA2914103900BC1E27 /* AccountBookElementRepository.swift in Sources */,
+				A0F5670B29081B5700DE44D7 /* AccountCategoryRepository.swift in Sources */,
+				A0F5670C29081B5700DE44D7 /* WeeklyAccountUseCase.swift in Sources */,
+				A0F5670D29081B5700DE44D7 /* MonthlyAccountUseCase.swift in Sources */,
+				A049911629164B99004237AD /* AccountWriterViewController.swift in Sources */,
+				A0EA25D5291BE7FB0050534A /* PushAccountWriterViewModel.swift in Sources */,
+				A0F5670E29081B5700DE44D7 /* DailyAccountUseCase.swift in Sources */,
+				A0F567172908293200DE44D7 /* UserSettingsUseCase.swift in Sources */,
+				A0F566FC29081B1500DE44D7 /* ViewFlowCoordinator.swift in Sources */,
+				A0F566FD29081B1500DE44D7 /* Observable.swift in Sources */,
+				A0F566FE29081B1500DE44D7 /* MonthlyAccountViewModel.swift in Sources */,
+				A0F566FF29081B1500DE44D7 /* MonthlyAccountViewController.swift in Sources */,
+				A0F567192908295900DE44D7 /* DefaultUserSettingsRepository.swift in Sources */,
+				A066CED4290970B200C8DC23 /* AssetViewModel.swift in Sources */,
+				A0E5BC05290FF639000E14F8 /* AccountBookElementStorageEntity.swift in Sources */,
+				A0F5670029081B1500DE44D7 /* WeeklyAccountViewModel.swift in Sources */,
+				A0F5672229082A6200DE44D7 /* UserSettingsRepository.swift in Sources */,
+				A0F5670129081B1500DE44D7 /* WeeklyAccountViewController.swift in Sources */,
+				A049911A291658BC004237AD /* AccountWriterViewModel.swift in Sources */,
+				A0F5670229081B1500DE44D7 /* DailyAccountViewModel.swift in Sources */,
+				A0F566F829081B0E00DE44D7 /* DefaultAccountCategoryRepository.swift in Sources */,
+				A049911C29165BC2004237AD /* AccountWriterUseCase.swift in Sources */,
+				A0177893290E8EE000C1FBC0 /* AssetElement.swift in Sources */,
+				A0F566F929081B0E00DE44D7 /* DataTransferService.swift in Sources */,
+				A066CED6290970C100C8DC23 /* AssetViewController.swift in Sources */,
+				A02E88002915484D00BC1E27 /* AccountBookElementViewModel.swift in Sources */,
+				A01778E1290EAE5A00C1FBC0 /* Storage.swift in Sources */,
+				A0F566FA29081B0E00DE44D7 /* Endpoint.swift in Sources */,
+				A0F566FB29081B0E00DE44D7 /* NetworkService.swift in Sources */,
+				A066CEDA2909716000C8DC23 /* AssetElementRepository.swift in Sources */,
+				A0F5671E290829B600DE44D7 /* UserSettingsViewModel.swift in Sources */,
+				A0AC710B283C648B00FABD41 /* AppDelegate.swift in Sources */,
+				A02E87FC2915429600BC1E27 /* AccountBookElementUseCase.swift in Sources */,
+				A02E87F829140F6700BC1E27 /* DefaultAccountBookElementRepository.swift in Sources */,
+				A0AC710D283C648B00FABD41 /* SceneDelegate.swift in Sources */,
+				A0AC7134283C6C4500FABD41 /* SceneDIContainer.swift in Sources */,
+				A066CED82909710500C8DC23 /* AssetElementUseCase.swift in Sources */,
+				A0E5BC0929100A03000E14F8 /* RealmError.swift in Sources */,
+				A053A2F3283DEA2000D472A2 /* Realm+Results.swift in Sources */,
+				A066CEDC2909719F00C8DC23 /* DefaultAssetElementRepository.swift in Sources */,
+				A0AC7136283C6C4D00FABD41 /* AppDIContainer.swift in Sources */,
+				A0D5CC44290D4E88005C86E2 /* AccountBookElementCategory.swift in Sources */,
+				A0AC7156283C7EF800FABD41 /* AppFlowCoordinator.swift in Sources */,
+				A0F56711290827C800DE44D7 /* AccountBookElement.swift in Sources */,
+				A0E5BC03290FF604000E14F8 /* AccountCategoryStorageEntity.swift in Sources */,
+				A085C80B290BF9E40046E8D4 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A0AC7115283C648E00FABD41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0AC7116283C648E00FABD41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0AC7119283C648E00FABD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0AC711A283C648E00FABD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0AC711C283C648E00FABD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB0CDD7D8E2220B9357614CE /* Pods-Account.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZJJVW89MW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Account/Resources/Asset/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.Account;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A0AC711D283C648E00FABD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A081181A097F91FB736EC569 /* Pods-Account.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZJJVW89MW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Account/Resources/Asset/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.Account;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0AC7102283C648B00FABD41 /* Build configuration list for PBXProject "Account" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AC7119283C648E00FABD41 /* Debug */,
+				A0AC711A283C648E00FABD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0AC711B283C648E00FABD41 /* Build configuration list for PBXNativeTarget "Account" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AC711C283C648E00FABD41 /* Debug */,
+				A0AC711D283C648E00FABD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0AC70FF283C648B00FABD41 /* Project object */;
+}
