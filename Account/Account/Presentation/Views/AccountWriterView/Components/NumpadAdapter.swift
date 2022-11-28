@@ -66,7 +66,7 @@ extension NumpadAdapter: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         guard let superviewWidth = collectionView.superview?.frame.width else { return CGSize(width: 0, height: 0) }
         
-        let sidePadding = superviewWidth * 0.15
+        let sidePadding = superviewWidth * 0.1
         let interspacing = superviewWidth * 0.1
         
         let cellWidth = (superviewWidth - 2 * sidePadding - 2 * interspacing) / 3
@@ -77,7 +77,7 @@ extension NumpadAdapter: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         guard let superviewWidth = collectionView.superview?.frame.width else { return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0) }
         
-        let sidePadding = superviewWidth * 0.15
+        let sidePadding = superviewWidth * 0.1
         return .init(top: 16, left: sidePadding, bottom: 16, right: sidePadding)
     }
     
