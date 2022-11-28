@@ -9,16 +9,26 @@ import UIKit
 
 class AccountWriterViewController: UIViewController {
     
-    @IBOutlet weak var crudTestButton: UIButton!
+    @IBOutlet weak var accountBookElementCategoryCollectionView: UICollectionView!
+    @IBOutlet weak var numpadCollectionView: UICollectionView!
     
     static let storyboardName = "AccountWriterViewController"
     static let storyboardID = "AccountWriterViewControllerID"
     
     private var accountBookElementViewModel: AccountBookElementViewModel!
     private var accountWriterViewModel: AccountWriterViewModel!
+    private var numpadAdapter: NumpadAdapter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        numpadAdapter = NumpadAdapter(collectionView: numpadCollectionView, numpadDataSource: accountWriterViewModel, numpadDelegate: self)
+        bind()
+    }
+    
+    func bind() {
+        accountWriterViewModel.inputText.bind { [weak self] text in
+            
+        }
     }
     
     static func create(with accountBookElementViewModel: AccountBookElementViewModel, accountWriterViewModel: AccountWriterViewModel) -> AccountWriterViewController {
@@ -29,13 +39,10 @@ class AccountWriterViewController: UIViewController {
         return viewController
     }
     
-    @IBAction func crudTestButtonAction(_ sender: Any) {
-        accountBookElementViewModel.didRead()
-        accountBookElementViewModel.didDeleteAll()
-        accountBookElementViewModel.didRead()
-        accountBookElementViewModel.didCreate(AccountBookElement(history: "", amount: 123, paymentType: .cash, accountCategory: .init(accountBookElementCategoryType: .expenditure, accountBookElementCategoryImageName: "asd", accountBookElementCategoryName: "asd")))
-        accountBookElementViewModel.didRead()
-        accountBookElementViewModel.didDeleteAll()
+}
+
+extension AccountWriterViewController: NumpadDelegate {
+    func selectKey(at indexPath: IndexPath) {
+        accountWriterViewModel.didSelectNumpadKey(at: indexPath.row)
     }
-    
 }
