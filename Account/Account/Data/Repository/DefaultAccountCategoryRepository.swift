@@ -18,7 +18,7 @@ final class DefaultAccountCategoryRepository: AccountCategoryRepository {
     }
     
     func create(_ object: AccountBookElementCategory, completion: @escaping (Result<AccountBookElementCategory, Error>) -> Void) {
-        storage.create(AccountBookElementCategoryStorageEntity(accountBookElementCategoryStorageEntityType: AccountBookElementCategoryStorageEntityType(rawValue: object.accountBookElementCategoryType.rawValue)!, accountBookElementCategoryImageName: object.accountBookElementCategoryImageName, accountBookElementCategoryName: object.accountBookElementCategoryName)) { result in
+        storage.create(AccountBookElementCategoryStorageEntity(accountBookElementCategoryStorageEntityType: AccountBookElementCategoryStorageEntityType(rawValue: object.accountBookElementCategoryType?.rawValue ?? ""), accountBookElementCategoryImageName: object.accountBookElementCategoryImageName, accountBookElementCategoryName: object.accountBookElementCategoryName)) { result in
             switch result {
             case .success(let data):
                 let domain = data.convertToDomain()
@@ -46,7 +46,7 @@ final class DefaultAccountCategoryRepository: AccountCategoryRepository {
     }
     
     func update(_ object: AccountBookElementCategory, completion: @escaping (Result<AccountBookElementCategory, Error>) -> Void) {
-        storage.update(AccountBookElementCategoryStorageEntity(accountBookElementCategoryStorageEntityType: AccountBookElementCategoryStorageEntityType(rawValue: object.accountBookElementCategoryType.rawValue)!, accountBookElementCategoryImageName: object.accountBookElementCategoryImageName, accountBookElementCategoryName: object.accountBookElementCategoryName)) { result in
+        storage.update(AccountBookElementCategoryStorageEntity(accountBookElementCategoryStorageEntityType: AccountBookElementCategoryStorageEntityType(rawValue: object.accountBookElementCategoryType?.rawValue ?? ""), accountBookElementCategoryImageName: object.accountBookElementCategoryImageName, accountBookElementCategoryName: object.accountBookElementCategoryName)) { result in
             switch result {
             case .success(let data):
                 let domain = data.convertToDomain()

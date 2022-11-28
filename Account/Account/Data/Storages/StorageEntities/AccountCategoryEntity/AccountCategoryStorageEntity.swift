@@ -31,11 +31,11 @@ extension AccountBookElementCategoryStorageEntityType {
 final class AccountBookElementCategoryStorageEntity: Object {
     
     @Persisted(primaryKey: true) var _id: ObjectId
-    @Persisted var accountBookElementCategoryStorageEntityType: AccountBookElementCategoryStorageEntityType
+    @Persisted var accountBookElementCategoryStorageEntityType: AccountBookElementCategoryStorageEntityType?
     @Persisted var accountBookElementCategoryImageName: String
     @Persisted var accountBookElementCategoryName: String
     
-    convenience init(accountBookElementCategoryStorageEntityType: AccountBookElementCategoryStorageEntityType, accountBookElementCategoryImageName: String, accountBookElementCategoryName: String) {
+    convenience init(accountBookElementCategoryStorageEntityType: AccountBookElementCategoryStorageEntityType?, accountBookElementCategoryImageName: String, accountBookElementCategoryName: String) {
         self.init()
         self.accountBookElementCategoryStorageEntityType = accountBookElementCategoryStorageEntityType
         self.accountBookElementCategoryImageName = accountBookElementCategoryImageName
@@ -47,7 +47,7 @@ final class AccountBookElementCategoryStorageEntity: Object {
 extension AccountBookElementCategoryStorageEntity {
     
     func convertToDomain() -> AccountBookElementCategory {
-        return .init(accountBookElementCategoryType: accountBookElementCategoryStorageEntityType.convertToDomain(), accountBookElementCategoryImageName: accountBookElementCategoryImageName, accountBookElementCategoryName: accountBookElementCategoryName)
+        return .init(accountBookElementCategoryType: accountBookElementCategoryStorageEntityType?.convertToDomain(), accountBookElementCategoryImageName: accountBookElementCategoryImageName, accountBookElementCategoryName: accountBookElementCategoryName)
     }
     
 }

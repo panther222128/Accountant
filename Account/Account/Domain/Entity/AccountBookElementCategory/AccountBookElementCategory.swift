@@ -13,7 +13,7 @@ enum AccountBookElementCategoryType: String {
 }
 
 struct AccountBookElementCategory {
-    let accountBookElementCategoryType: AccountBookElementCategoryType
+    let accountBookElementCategoryType: AccountBookElementCategoryType?
     let accountBookElementCategoryImageName: String
     let accountBookElementCategoryName: String
 }
