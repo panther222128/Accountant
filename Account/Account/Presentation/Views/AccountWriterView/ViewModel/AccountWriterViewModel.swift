@@ -27,7 +27,13 @@ final class DefaultAccountWriterViewModel: AccountWriterViewModel {
     }
     
     func didSelectNumpadKey(at index: Int) {
-        inputText.value += numpadKeys[index]
+        if index < numpadKeys.count - 1 {
+            inputText.value += numpadKeys[index]
+        } else {
+            if !inputText.value.isEmpty {
+                inputText.value.removeLast()
+            }
+        }
     }
     
 }

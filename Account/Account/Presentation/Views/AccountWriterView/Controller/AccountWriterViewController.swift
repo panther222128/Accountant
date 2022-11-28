@@ -27,7 +27,7 @@ class AccountWriterViewController: UIViewController {
     
     func bind() {
         accountWriterViewModel.inputText.bind { [weak self] text in
-            
+            print(text)
         }
     }
     
