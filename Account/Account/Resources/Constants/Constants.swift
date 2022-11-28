@@ -9,6 +9,8 @@ import UIKit
 
 struct Constants {
     
+    static let numpadKeys = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "00", "0", "←"]
+    
     struct TabBarImage {
         static let month = UIImage(named: "30")
         static let week = UIImage(named: "7")
