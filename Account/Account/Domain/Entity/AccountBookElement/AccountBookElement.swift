@@ -16,6 +16,6 @@ struct AccountBookElement {
     let history: String
     let amount: Int
     let paymentType: PaymentType?
-    let accountCategory: AccountBookElementCategory
+    let accountCategory: AccountBookElementCategory?
 }
 

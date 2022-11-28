@@ -9,11 +9,11 @@ import Foundation
 import RealmSwift
 
 protocol Storage {
-    func create<T: Object>(_ object: T, completion: @escaping (Result<T, Error>) -> Void)
-    func read<T: Object>(_ object: T.Type, completion: @escaping (Result<[T], Error>) -> Void)
-    func update<T: Object>(_ object: T, completion: @escaping (Result<T, Error>) -> Void)
-    func delete<T: Object>(_ object: T.Type, at index: Int, completion: @escaping (Result<T, Error>) -> Void)
-    func deleteAll<T: Object>(_ object: T.Type, completion: @escaping (Result<[T], Error>) -> Void)
+    func create<T: Object>(_ object: T, completion: @escaping (Result<T, RealmError>) -> Void)
+    func read<T: Object>(_ object: T.Type, completion: @escaping (Result<[T], RealmError>) -> Void)
+    func update<T: Object>(_ object: T, completion: @escaping (Result<T, RealmError>) -> Void)
+    func delete<T: Object>(_ object: T.Type, at index: Int, completion: @escaping (Result<T, RealmError>) -> Void)
+    func deleteAll<T: Object>(_ object: T.Type, completion: @escaping (Result<[T], RealmError>) -> Void)
 }
 
 final class DefaultStorage {
@@ -27,7 +27,7 @@ final class DefaultStorage {
 
 extension DefaultStorage: Storage {
     
-    func create<T: Object>(_ object: T, completion: @escaping (Result<T, Error>) -> Void) {
+    func create<T: Object>(_ object: T, completion: @escaping (Result<T, RealmError>) -> Void) {
         storageQueue.async {
             do {
                 let realm = try Realm()
@@ -45,7 +45,7 @@ extension DefaultStorage: Storage {
         }
     }
     
-    func read<T: Object>(_ object: T.Type, completion: @escaping (Result<[T], Error>) -> Void) {
+    func read<T: Object>(_ object: T.Type, completion: @escaping (Result<[T], RealmError>) -> Void) {
         storageQueue.async {
             do {
                 let realm = try Realm()
@@ -58,7 +58,7 @@ extension DefaultStorage: Storage {
         }
     }
     
-    func update<T: Object>(_ object: T, completion: @escaping (Result<T, Error>) -> Void) {
+    func update<T: Object>(_ object: T, completion: @escaping (Result<T, RealmError>) -> Void) {
         storageQueue.async {
             do {
                 let realm = try Realm()
@@ -76,7 +76,7 @@ extension DefaultStorage: Storage {
         }
     }
     
-    func delete<T: Object>(_ object: T.Type, at index: Int, completion: @escaping (Result<T, Error>) -> Void) {
+    func delete<T: Object>(_ object: T.Type, at index: Int, completion: @escaping (Result<T, RealmError>) -> Void) {
         storageQueue.async {
             do {
                 let realm = try Realm()
@@ -100,7 +100,7 @@ extension DefaultStorage: Storage {
         }
     }
     
-    func deleteAll<T: Object>(_ object: T.Type, completion: @escaping (Result<[T], Error>) -> Void) {
+    func deleteAll<T: Object>(_ object: T.Type, completion: @escaping (Result<[T], RealmError>) -> Void) {
         storageQueue.async {
             do {
                 let realm = try Realm()

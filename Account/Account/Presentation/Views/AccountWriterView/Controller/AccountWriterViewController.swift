@@ -30,7 +30,12 @@ class AccountWriterViewController: UIViewController {
     }
     
     @IBAction func crudTestButtonAction(_ sender: Any) {
-        
+        accountBookElementViewModel.didRead()
+        accountBookElementViewModel.didDeleteAll()
+        accountBookElementViewModel.didRead()
+        accountBookElementViewModel.didCreate(AccountBookElement(history: "", amount: 123, paymentType: .cash, accountCategory: .init(accountBookElementCategoryType: .expenditure, accountBookElementCategoryImageName: "asd", accountBookElementCategoryName: "asd")))
+        accountBookElementViewModel.didRead()
+        accountBookElementViewModel.didDeleteAll()
     }
     
 }

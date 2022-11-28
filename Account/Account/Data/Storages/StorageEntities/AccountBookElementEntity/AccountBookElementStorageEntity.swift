@@ -33,9 +33,9 @@ final class AccountBookElementStorageEntity: Object {
     @Persisted var history: String
     @Persisted var amount: Int
     @Persisted var paymentEntityType: PaymentEntityType?
-    @Persisted var accountBookElementCategoryStorageEntity: AccountBookElementCategoryStorageEntity
+    @Persisted var accountBookElementCategoryStorageEntity: AccountBookElementCategoryStorageEntity?
     
-    convenience init(history: String, amount: Int, paymentEntityType: PaymentEntityType?, accountBookElementCategoryStorageEntity: AccountBookElementCategoryStorageEntity) {
+    convenience init(history: String, amount: Int, paymentEntityType: PaymentEntityType?, accountBookElementCategoryStorageEntity: AccountBookElementCategoryStorageEntity?) {
         self.init()
         self.history = history
         self.amount = amount
@@ -48,7 +48,7 @@ final class AccountBookElementStorageEntity: Object {
 extension AccountBookElementStorageEntity {
     
     func convertToDomain() -> AccountBookElement {
-        return .init(history: history, amount: amount, paymentType: paymentEntityType?.convertToDomain(), accountCategory: accountBookElementCategoryStorageEntity.convertToDomain())
+        return .init(history: history, amount: amount, paymentType: paymentEntityType?.convertToDomain(), accountCategory: accountBookElementCategoryStorageEntity?.convertToDomain())
     }
     
 }
